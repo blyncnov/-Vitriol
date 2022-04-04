@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Navigation from "../components/Navigation"
 import HeroIntro from "../components/HeroIntro"
 import AboutFoundation from "../components/AboutFoundation"
+import FoundationAttribute from "../components/FoundationAttribute"
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
       <Navigation />
       <HeroIntro />
       <AboutFoundation/>
-      <h1>lorem</h1> lorem ipsum dolor sit amet, consectetur adip
+     <FoundationAttribute/>
     </>
   )
 }

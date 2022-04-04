@@ -31,7 +31,7 @@ const HeroIntro = () => {
                                 <HeadingOne
                                     size="2.5rem"
                                     color="#ccd6f6">
-                                    OUR HELPING TO THE WORLD TO HEAL HUMANITY
+                                GIVE A HAND TO MAKE THE BETTER WORLD
                                 </HeadingOne>
                                 <br />
                                 <Paragraph color="#8892B0">
