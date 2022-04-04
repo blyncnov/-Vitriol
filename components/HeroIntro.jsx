@@ -1,0 +1,83 @@
+import React from 'react';
+
+// Components
+import Button from "../constants/Button"
+
+// Data
+// import { HeroData } from "../data/HeroData"
+
+// styled-components
+import {
+    HeroContainerSection, DonateontainerSection,
+    DonateBox, DetailedDonateBox, DetailedDonateForm
+} from "../styles/styled/HeroIntro"
+
+import {
+    Constraints, Section,
+    SectionInner, Divider,
+    HeadingOne, Paragraph,
+    FlexBoxToRow
+} from "../styles/constants/Constants"
+
+
+const HeroIntro = () => {
+    return (
+        <>
+            <HeroContainerSection>
+                <Constraints max="90%">
+                    <Section>
+                        <SectionInner align="none">
+                            <Divider>
+                                <HeadingOne
+                                    size="3rem"
+                                    color="#ccd6f6">
+                                    Our Helping To The World
+                                </HeadingOne>
+                                <br />
+                                <Paragraph color="#8892B0">
+                                    The sea freight service has grown conside rably in recent years. We spend timetting to know your processes to.
+                                    inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct especially
+                                    workplace.
+                                </Paragraph>
+
+                                <br />
+                                <FlexBoxToRow>
+                                    <Button tittle="Donate" urlData="mailto:bholuwatife00@gmail.com" />
+                                </FlexBoxToRow>
+                                <br />
+                            </Divider>
+
+                            <Divider order="1">
+                                <DonateontainerSection>
+                                    <DonateBox>
+                                        <DetailedDonateBox>
+                                            <h1>Vitriol Charity Funds</h1>
+                                            <br />
+                                            <p>FUNDS RAISED BY 1200 PEOPLE</p>
+                                        </DetailedDonateBox>
+                                        <DetailedDonateForm>
+                                            <form >
+                                                <div>
+                                                    <label htmlFor="Name">Amount to Give </label>
+                                                    <br />
+                                                    <br />
+                                                    <input type="number" placeholder="Enter Amout To Give" />
+                                                </div>
+                                                <br />
+                                                <button type="submit">Make Donation</button>
+                                            </form>
+                                        </DetailedDonateForm>
+                                    </DonateBox>
+                                </DonateontainerSection>
+                            </Divider>
+
+                        </SectionInner>
+                    </Section>
+                </Constraints>
+            </HeroContainerSection>
+
+        </>
+    )
+}
+
+export default HeroIntro
