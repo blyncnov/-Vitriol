@@ -23,9 +23,8 @@ transition: all 0.8s ease 0s;
 
 
 &:hover{
-    transform: translateY(-20px);
+    transform: translateY(-15px);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 10px -5px, rgba(0, 0, 0, 0.02) 0px 5px 4px -5px;
-  border-radius: 20px;
 }
 `
 

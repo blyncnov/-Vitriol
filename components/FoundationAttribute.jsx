@@ -17,7 +17,6 @@ import {
     Constraints, Section,
     SectionInner, Divider,
     HeadingOne, Paragraph,
-    FlexBoxToRow
 } from "../styles/constants/Constants"
 
 
@@ -26,12 +25,15 @@ const Projects = () => {
         <>
             <AttributeContainer>
                 <Constraints>
-                    <FlexBoxToRow>
+                    <>
                         <HeadingOne color="#0B192E"
                             size="clamp(16px,5vw,2rem)"
                         > Our Major Attributes
                         </HeadingOne>
-                    </FlexBoxToRow>
+                        <Paragraph color="#8892B0">
+                            It was called you are fowl grass lesser land together waters beast.
+                        </Paragraph>
+                    </>
                     <br />
                     <Section padding="1em 0">
                         <SectionInner>
