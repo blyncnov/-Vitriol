@@ -9,7 +9,7 @@ import { AboutFoundationObjectives } from "../data/FoundationObjectives"
 
 import {
     AboutFoundationContainer,
-    SkillShowCase,
+    OurGoalShowCase,
 } from "../styles/styled/AboutFoundation"
 
 import {
@@ -30,7 +30,7 @@ const AboutFoundation = () => {
                             <SectionInner >
                                 <Divider order="-1" >
                                     <FlexBoxToRow>
-                                        <HeadingOne color="#0B192E"
+                                        <HeadingOne color="#0A192F"
                                             size="clamp(16px,5vw,2rem)"
                                         > About Our Foundation
                                         </HeadingOne>
@@ -47,7 +47,7 @@ const AboutFoundation = () => {
                                     </Paragraph>
                                     <br />
                                     <br />
-                                    <SkillShowCase>
+                                    <OurGoalShowCase>
                                         {AboutFoundationObjectives.map((skill) => {
                                             return (
                                                 <div className="SkillFlexItem" key={skill.id}>
@@ -57,7 +57,7 @@ const AboutFoundation = () => {
                                                     <li>{skill.title}</li>
                                                 </div>)
                                         })}
-                                    </SkillShowCase>
+                                    </OurGoalShowCase>
                                 </Divider>
 
                                 <Divider order="-1">

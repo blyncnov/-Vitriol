@@ -31,7 +31,7 @@ const HeroIntro = () => {
                                 <HeadingOne
                                     size="2.5rem"
                                     color="#ccd6f6">
-                                    Our Helping To The World To Heal Humanity
+                                    OUR HELPING TO THE WORLD TO HEAL HUMANITY
                                 </HeadingOne>
                                 <br />
                                 <Paragraph color="#8892B0">
@@ -42,8 +42,8 @@ const HeroIntro = () => {
 
                                 <br />
                                 <FlexBoxToRow>
-                                    <Button tittle="Donate" bgHover="#45DBB7" urlData="mailto:bholuwatife00@gmail.com" />
-                                    <Button bg="#45DBB7" tittle="Contact us" urlData="" />
+                                    <Button full="100%" tittle="Donate" bgHover="#45DBB7" urlData="mailto:bholuwatife00@gmail.com" />
+                                    <Button full="100%"  bg="#45DBB7" tittle="Contact us" urlData="" />
                                 </FlexBoxToRow>
                                 <br />
                             </Divider>
@@ -52,9 +52,9 @@ const HeroIntro = () => {
                                 <DonateontainerSection>
                                     <DonateBox>
                                         <DetailedDonateBox>
-                                            <h1>Vitriol Charity Funds</h1>
+                                            <h2>Vitriol Charity Funds</h2>
                                             <br />
-                                            <p>FUNDS RAISED BY 1200 PEOPLE</p>
+                                            <p>Be the light to thw world while you can.</p>
                                         </DetailedDonateBox>
                                         <DetailedDonateForm>
                                             <form >

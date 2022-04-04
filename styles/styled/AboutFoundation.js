@@ -5,7 +5,7 @@ width: auto;
 background-color: #FFFFFF;
 `
 
-export const SkillShowCase  = styled.div`
+export const OurGoalShowCase  = styled.div`
 display: grid;
 gap: 2em;
 grid-template-columns: 1fr 1fr;
@@ -16,6 +16,11 @@ justify-content: space-between;
     display: flex;
     align-items: center;
    gap: 1em;
+}
+
+li{
+  font-size: 12px;
+  color: #0A192F;
 }
 
 `
