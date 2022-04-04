@@ -103,7 +103,6 @@ li:hover{
     width: 60vw;
     height: 100vh;
     padding: 2em 1em;
-    float: right;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
 
     li {
