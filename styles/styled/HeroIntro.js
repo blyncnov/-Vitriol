@@ -5,6 +5,8 @@ width: auto;
 background-color: #0A192F;
 position: relative;
 box-shadow: rgb(98 98 98 / 24%) 0px 3px 8px;
+
+
 `
 
 export const DonateontainerSection  = styled.div`
@@ -15,7 +17,8 @@ padding: 1em;
 border-radius: 2px;
 margin-top: 5%;
 color: white;
-box-shadow: rgb(98 98 98 / 24%) 0px 3px 8px;
+box-shadow: 0 4px 30px -5px rgb(98 98 98 / 24%) ;
+
 
 @media (max-width: 768px) {
   padding: 0;
@@ -31,7 +34,7 @@ position: absolute;
 top: 0;
 left: 0;
 right: 0;
-box-shadow: rgb(98 98 98 / 24%) 0px 3px 8px;
+box-shadow: 0 8px 30px -5px rgb(98 98 98 / 24%) ;
 
 @media (max-width: 768px) {
     position: relative;
