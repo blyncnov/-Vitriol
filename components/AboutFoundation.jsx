@@ -61,7 +61,7 @@ const Services = () => {
                                 </Divider>
 
                                 <Divider order="-1">
-                                    <Image style={{ borderRadius: "2px" }} src={ShowCase} placeholder="blur" blurDataURL={ShowCase} alt="banner" layout="responsive" />
+                                    <Image style={{ borderRadius: "3px" }} src={ShowCase} placeholder="blur" blurDataURL={ShowCase} alt="banner" layout="responsive" />
                                 </Divider>
 
                             </SectionInner>
