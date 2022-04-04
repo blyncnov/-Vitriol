@@ -62,16 +62,14 @@ z-index: 99;
 
 @media (max-width: 800px) {
     position: absolute;
-background-color: rgb(10, 25, 47, .9);
+    background-color: rgb(10, 25, 47, .01);
     transition: all .3s ease-in;
     width: 100%;
     height: 100vh;
     backdrop-filter: blur(50px);
-//           filter: blur(8px);
-//   -webkit-filter: blur(8px);
     left: ${({clicked}) => clicked ? "0" : "-100%"};
     top: 0;
-    right: 0;
+
 }
 `
 
@@ -86,7 +84,7 @@ li{
     cursor: pointer;
     font-size: 1.1rem;
     font-family: helvetica;
-    color: #ccd6f6 !important;
+    color: white !important;
     transition: all 0.5s ease-in-out;
 
     span{
@@ -101,11 +99,11 @@ li:hover{
 
 @media (max-width: 800px) {
     display: block;
-    background-color: #0a192f;
-    backdrop-filter: blur(20px);
+    background-color: #45dbb7;
     width: 60vw;
     height: 100vh;
     padding: 2em 1em;
+    float: right;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
 
     li {
