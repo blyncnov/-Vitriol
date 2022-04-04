@@ -23,7 +23,7 @@ import {
 const AboutFoundation = () => {
     return (
         <>
-            <IconContext.Provider value={{ color: "#ccd6f6" }} >
+            <IconContext.Provider value={{ color: "#45DBB7" }} >
                 <AboutFoundationContainer>
                     <Constraints >
                         <Section>
