@@ -31,7 +31,7 @@ const HeroIntro = () => {
                                 <HeadingOne
                                     size="2.5rem"
                                     color="#ccd6f6">
-                                GIVE A HAND TO MAKE THE BETTER WORLD
+                                    GIVE A HAND TO MAKE THE BETTER WORLD
                                 </HeadingOne>
                                 <br />
                                 <Paragraph color="#8892B0">
@@ -42,8 +42,8 @@ const HeroIntro = () => {
 
                                 <br />
                                 <FlexBoxToRow>
-                                    <Button full="100%" tittle="Donate" bgHover="#45DBB7" urlData="mailto:bholuwatife00@gmail.com" />
-                                    <Button full="100%"  bg="#45DBB7" tittle="Contact us" urlData="" />
+                                    <Button full="100%" bg="#45DBB7" tittle="Donate" urlData="mailto:bholuwatife00@gmail.com" />
+                                    <Button full="100%" bgHover="#45DBB7" tittle="Contact us" urlData="" />
                                 </FlexBoxToRow>
                                 <br />
                             </Divider>
