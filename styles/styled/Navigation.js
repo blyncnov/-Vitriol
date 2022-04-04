@@ -2,16 +2,20 @@ import styled from "styled-components"
 
 export const NavigationContainerWrapper  = styled.div`
 width: 100%;
-height: 80px;
+height: 120px;
 position: relative;
 background-color: #0a192f;
+
+@media (max-width: 768px) {
+  height: 80px;
+}
 `
 
 export const NavigationUpperDetails = styled.div`
 width: 100%;
 color: #fff;
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     display: none;
 }
 `
