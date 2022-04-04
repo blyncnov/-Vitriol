@@ -51,7 +51,11 @@ align-items: center;
 
 export const HeadingOne  = styled.h1`
 font-size: ${({size}) => size ? size : "2rem"};
-color: ${({color}) => color ? color : "#412272"};
+color: ${({ color }) => color ? color : "#412272"};
+
+@media (max-width: 768px) {
+  font-size: ${({sizeM}) => sizeM ? sizeM : "2rem"};
+}
 `
 
 export const Paragraph = styled.p`

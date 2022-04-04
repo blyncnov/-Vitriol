@@ -4,6 +4,7 @@ export const HeroContainerSection  = styled.div`
 width: auto;
 background-color: #0A192F;
 position: relative;
+box-shadow: rgb(98 98 98 / 24%) 0px 3px 8px;
 `
 
 export const DonateontainerSection  = styled.div`
@@ -14,6 +15,7 @@ padding: 1em;
 border-radius: 2px;
 margin-top: 5%;
 color: white;
+box-shadow: rgb(98 98 98 / 24%) 0px 3px 8px;
 
 @media (max-width: 768px) {
   padding: 0;
@@ -29,7 +31,7 @@ position: absolute;
 top: 0;
 left: 0;
 right: 0;
-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+box-shadow: rgb(98 98 98 / 24%) 0px 3px 8px;
 
 @media (max-width: 768px) {
     position: relative;
