@@ -29,9 +29,9 @@ const HeroIntro = () => {
                         <SectionInner align="none">
                             <Divider>
                                 <HeadingOne
-                                    size="3rem"
+                                    size="2.5rem"
                                     color="#ccd6f6">
-                                    Our Helping To The World
+                                    Our Helping To The World To Heal Humanity
                                 </HeadingOne>
                                 <br />
                                 <Paragraph color="#8892B0">
@@ -42,7 +42,8 @@ const HeroIntro = () => {
 
                                 <br />
                                 <FlexBoxToRow>
-                                    <Button tittle="Donate" urlData="mailto:bholuwatife00@gmail.com" />
+                                    <Button tittle="Donate" bgHover="#45DBB7" urlData="mailto:bholuwatife00@gmail.com" />
+                                    <Button bg="#45DBB7" tittle="Contact us" urlData="" />
                                 </FlexBoxToRow>
                                 <br />
                             </Divider>

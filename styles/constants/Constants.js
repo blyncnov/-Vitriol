@@ -82,7 +82,7 @@ export const Button1 = styled.button`
     letter-spacing: 0.08em;
     text-transform: Capitalise;
     padding: 12px 24px;
-    border-radius: 2px;
+    border-radius: 4px;
     cursor: pointer;
     transition: all 0.5s ease-in-out, color 0.15s ease-in-out,
       background-color 0.5s ease-in-out, border-color 0.15s ease-in-out,
