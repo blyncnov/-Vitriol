@@ -20,7 +20,7 @@ import {
 } from "../styles/constants/Constants"
 
 
-const HeroIntro = () => {
+const HeroIntro = ({ Donate }) => {
     return (
         <>
             <HeroContainerSection>
@@ -42,8 +42,8 @@ const HeroIntro = () => {
 
                                 <br />
                                 <FlexBoxToRow>
-                                    <Button full="100%" bg="#45DBB7" tittle="Donate" urlData="mailto:bholuwatife00@gmail.com" />
-                                    <Button full="100%" bgHover="#45DBB7" tittle="Contact us" urlData="" />
+                                    <Button Donate={Donate} full="100%" bg="#45DBB7" tittle="Donate" urlData="" />
+                                    <Button Donate="" full="100%" bgHover="#45DBB7" tittle="Contact us" urlData="mailto:bholuwatife00@gmail.com" />
                                 </FlexBoxToRow>
                                 <br />
                             </Divider>

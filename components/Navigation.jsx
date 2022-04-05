@@ -30,13 +30,15 @@ import {
 } from "../styles/constants/Constants"
 
 
-const Navigation = () => {
+const Navigation = ({ Donate }) => {
     const [isclicked, setIsClicked] = useState(false);
     const [isScroll, setIsScroll] = useState(false);
 
     const isClickedHandler = () => {
         setIsClicked(!isclicked)
     }
+
+    console.log(Donate);
 
     useEffect(() => {
 
@@ -103,10 +105,10 @@ const Navigation = () => {
                                         })}
                                         <Button
                                             bg="#45DBB7"
-
+                                            Donate={Donate}
                                             full="100%"
                                             tittle="Donate"
-                                            urlData="https://github.com/blyncnov" />
+                                        />
                                     </NavigationItem>
                                 </NavigationShadow>
 

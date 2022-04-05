@@ -3,10 +3,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import { CgMenuBoxed } from 'react-icons/cg'
-import { FaBoxOpen, FaBox } from 'react-icons/fa'
+import { FaBoxOpen } from 'react-icons/fa'
 import { BiCheckboxSquare } from 'react-icons/bi'
 
-import { AllProjectData } from "../data/Projects"
+// import { AllProjectData } from "../data/Projects"
 
 import {
     AttributeContainer, AttributeDetails,
