@@ -33,7 +33,7 @@ position: absolute;
 top: 0;
 left: 0;
 right: 0;
-box-shadow: 0 2px 30px -5px #342828 ;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 
 @media (max-width: 768px) {
     position: relative;
@@ -45,7 +45,7 @@ background-color: #45DBB7;
 padding: 2em 1em;
 border-radius: 4px 4px 0 0;
 font-weight: bold;
-color: #0A192F;
+color: #333333;
 `
 
 export const DetailedDonateForm  = styled.div`
@@ -61,21 +61,22 @@ input{
   border-radius: 2px;
   padding:  1em;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 2px;
 }
 
 button {
-      background-color: #45DBB7;
+  background-color: #45DBB7;
   border: none;
   color: white;
-  padding: 10px;
+  padding: 1em ;
+  font-weight: bold;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
   margin: 4px 2px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 

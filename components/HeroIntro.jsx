@@ -54,7 +54,7 @@ const HeroIntro = ({ Donate }) => {
                                         <DetailedDonateBox>
                                             <h2>Vitriol Charity Funds</h2>
                                             <br />
-                                            <p>Be the light to thw world while you can.</p>
+                                            <p>Be the light to the world while you can.</p>
                                         </DetailedDonateBox>
                                         <DetailedDonateForm>
                                             <form >

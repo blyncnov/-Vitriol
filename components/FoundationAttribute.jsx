@@ -81,7 +81,7 @@ const Projects = () => {
                                             sizeM="1.5rem"
                                             color="#0A192F"
                                         >
-                                            Become Bolunteer
+                                            Become Volunteer
                                         </HeadingOne>
                                         <Paragraph color="#8892B0">
                                             It you are. Was called you are fowl grass lesser land together waters beast darkness earth land whose male all moveth fruitful.
