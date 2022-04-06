@@ -19,11 +19,10 @@ cursor: pointer;
 
 
 const Button = ({ tittle, bg, color, bgHover, colorHover, full, urlData, border, Donate }) => {
-    console.log("here is the donat call" + Donate);
     return (
         <>
             <Button1 onClick={Donate} color={color} colorHover={colorHover} bgHover={bgHover} bg={bg} full={full}>
-                <Link colorHover={colorHover} style={{ color: "white" }} target="_blank" href={urlData}>{tittle}</Link>
+                <Link colorHover={colorHover} style={{ color: "white" }} href={urlData}>{tittle}</Link>
             </Button1>
         </>
     )

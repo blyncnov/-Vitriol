@@ -27,8 +27,8 @@ export const NavigationLists = [
     },
        {
         id: 5,
-            name: "Blog ",
-          navigate: "blog",
+            name: "Blogs",
+          navigate: "blogs",
     },
        {
         id: 6,

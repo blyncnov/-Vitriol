@@ -5,16 +5,17 @@ import Navigation from "../components/Navigation"
 import HeroIntro from "../components/HeroIntro"
 import AboutFoundation from "../components/AboutFoundation"
 import FoundationAttribute from "../components/FoundationAttribute"
+import TestApi from "../components/testApi"
 
 export default function Home() {
 
-  useEffect(() => {
-    if (typeof window.ethereum !== 'undefined') {
-      alert("Welcome to !Vitriol, blyncnov says \n \n You have MetaMask installed, legoooo!!!!!!!!!!!!! 😘😘")
-  } else {
-          alert("Welcome to !Vitriol, blyncnov says \n \n This is a mere web3 simulator, i call it web2.5 😂😂😂😂 .... You can go ahead without MetaMask")
-}
-  }, [])
+//   useEffect(() => {
+//     if (typeof window.ethereum !== 'undefined') {
+//       alert("Welcome to !Vitriol, blyncnov says \n \n You have MetaMask installed, legoooo!!!!!!!!!!!!! 😘😘")
+//   } else {
+//           alert("Welcome to !Vitriol, blyncnov says \n \n This is a mere web3 simulator, i call it web2.5 😂😂😂😂 .... You can go ahead without MetaMask")
+// }
+//   }, [])
   
   const DonateFunction = async () => {
     ethereum.request({ method: "eth_requestAccounts" });
@@ -31,7 +32,8 @@ export default function Home() {
       <Navigation Donate={DonateFunction }/>
       <HeroIntro Donate={DonateFunction }/>
       <AboutFoundation/>
-     <FoundationAttribute/>
+      <FoundationAttribute />
+     
     </>
   )
 }

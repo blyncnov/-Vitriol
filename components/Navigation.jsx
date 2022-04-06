@@ -23,9 +23,8 @@ import {
 } from "../styles/styled/Navigation"
 
 import {
-    Constraints, Section,
+    Constraints,
     SectionInner, Divider,
-    HeadingOne, Paragraph,
     FlexBoxToRow
 } from "../styles/constants/Constants"
 
@@ -38,14 +37,12 @@ const Navigation = ({ Donate }) => {
         setIsClicked(!isclicked)
     }
 
-    console.log(Donate);
-
     useEffect(() => {
 
         const isScrolledHandler = () => {
             if (window.scrollY >= 100) {
                 setIsScroll(true)
-                console.log(window.scrollY);
+
             }
             else {
                 setIsScroll(false)
