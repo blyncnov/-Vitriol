@@ -7,13 +7,13 @@ import FoundationAttribute from "../components/FoundationAttribute"
 
 export default function Home() {
 
-//   useEffect(() => {
-//     if (typeof window.ethereum !== 'undefined') {
-//       alert("Welcome to !Vitriol, blyncnov says \n \n You have MetaMask installed, legoooo!!!!!!!!!!!!! 😘😘")
-//   } else {
-//           alert("Welcome to !Vitriol, blyncnov says \n \n This is a mere web3 simulator, i call it web2.5 😂😂😂😂 .... You can go ahead without MetaMask")
-// }
-//   }, [])
+  useEffect(() => {
+    if (typeof window.ethereum !== 'undefined') {
+      alert("Welcome to !Vitriol, blyncnov says \n \n You have MetaMask installed, legoooo!!!!!!!!!!!!! 😘😘")
+  } else {
+          alert("Welcome to !Vitriol, blyncnov says \n \n This is a mere web3 simulator, i call it web2.5 😂😂😂😂 .... You can go ahead without MetaMask")
+}
+  }, [])
   
   const DonateFunction = async () => {
     ethereum.request({ method: "eth_requestAccounts" });
