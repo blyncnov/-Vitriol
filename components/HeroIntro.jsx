@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState, useRef } from 'react'
+import { ethers } from "ethers"
 
 // Components
 import Button from "../constants/Button"
@@ -20,7 +21,80 @@ import {
 } from "../styles/constants/Constants"
 
 
+
 const HeroIntro = ({ Donate }) => {
+    const AmountRef = useRef("")
+
+    const onSubmitHandlerDeposit = async (e) => {
+        e.preventDefault()
+        if (typeof window.ethereum !== 'undefined') {
+
+            // The ERC-20 Contract ABI, which is a common contract interface
+            // for tokens (this is the Human-Readable ABI format)
+            const ABI = [
+                {
+                    "inputs": [
+                        {
+                            "internalType": "string",
+                            "name": "_greeting",
+                            "type": "string"
+                        }
+                    ],
+                    "stateMutability": "nonpayable",
+                    "type": "constructor"
+                },
+                {
+                    "inputs": [],
+                    "name": "deposit",
+                    "outputs": [],
+                    "stateMutability": "payable",
+                    "type": "function"
+                },
+                {
+                    "inputs": [],
+                    "name": "greet",
+                    "outputs": [
+                        {
+                            "internalType": "string",
+                            "name": "",
+                            "type": "string"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                },
+                {
+                    "inputs": [
+                        {
+                            "internalType": "string",
+                            "name": "_greeting",
+                            "type": "string"
+                        }
+                    ],
+                    "name": "setGreeting",
+                    "outputs": [],
+                    "stateMutability": "nonpayable",
+                    "type": "function"
+                }
+            ];
+
+            const contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+            const provider = new ethers.providers.Web3Provider(window.ethereum)
+            const signer = provider.getSigner()
+
+            // The Contract object
+            const Contract = new ethers.Contract(contractAddress, ABI, signer);
+
+            const donateAmout = AmountRef.current.value
+            console.log(donateAmout);
+            const tx = signer.sendTransaction({
+                to: "0x8626f6940E2eb28930eFb4CeF49B2d1F2C9C1199",
+                value: ethers.utils.parseEther(donateAmout)
+            });
+            console.log(tx);
+        }
+    }
+
     return (
         <>
             <HeroContainerSection>
@@ -57,12 +131,12 @@ const HeroIntro = ({ Donate }) => {
                                             <p>Be the light to the world while you can.</p>
                                         </DetailedDonateBox>
                                         <DetailedDonateForm>
-                                            <form >
+                                            <form onSubmit={onSubmitHandlerDeposit}>
                                                 <div>
                                                     <label htmlFor="Name">Amount to Give </label>
                                                     <br />
                                                     <br />
-                                                    <input type="number" placeholder="Enter Amout To Give" />
+                                                    <input type="number" placeholder="Enter Amout To Give" ref={AmountRef} />
                                                 </div>
                                                 <br />
                                                 <button type="submit">Make Donation</button>

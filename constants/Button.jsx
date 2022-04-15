@@ -17,11 +17,10 @@ cursor: pointer;
 }
 `
 
-
-const Button = ({ tittle, bg, color, bgHover, colorHover, full, urlData, border, Donate }) => {
+const Button = ({ tittle, bg, color, bgHover, colorHover, full, urlData, border }) => {
     return (
         <>
-            <Button1 onClick={Donate} color={color} colorHover={colorHover} bgHover={bgHover} bg={bg} full={full}>
+            <Button1 color={color} colorHover={colorHover} bgHover={bgHover} bg={bg} full={full}>
                 <Link colorHover={colorHover} style={{ color: "white" }} href={urlData}>{tittle}</Link>
             </Button1>
         </>

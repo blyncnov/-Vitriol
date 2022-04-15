@@ -2,14 +2,13 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 import { IconContext } from "react-icons";
-
 import { FaTimes } from 'react-icons/fa'
 import { RiBarChartHorizontalLine } from "react-icons/ri"
 
 // Components
 import Button from "../constants/Button"
 
-// Data
+// Data for navigation
 import { Logo, NavigationLists } from "../data/Navigation"
 
 // styled-components
