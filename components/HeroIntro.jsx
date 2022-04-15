@@ -31,7 +31,7 @@ const HeroIntro = () => {
 
             const DonateAmount = AmountRef.current.value
             const tx = signer.sendTransaction({
-                to: "0x8626f6940E2eb28930eFb4CeF49B2d1F2C9C1199",
+                to: "0xd18e71fe543e23Fe56C34b9750391cf6Ccb54BF8",
                 value: ethers.utils.parseEther(DonateAmount)
             });
             console.log(tx);
@@ -60,7 +60,7 @@ const HeroIntro = () => {
                                 <br />
                                 <FlexBoxToRow>
                                     <Button full="100%" bg="#45DBB7" tittle="Explore" urlData="/blogs" />
-                                    <Button  full="100%" bgHover="#45DBB7" tittle="Contact us" urlData="mailto:bholuwatife00@gmail.com" />
+                                    <Button full="100%" bgHover="#45DBB7" tittle="Contact us" urlData="mailto:bholuwatife00@gmail.com" />
                                 </FlexBoxToRow>
                                 <br />
                             </Divider>
