@@ -20,76 +20,19 @@ import {
     FlexBoxToRow
 } from "../styles/constants/Constants"
 
-
-
-const HeroIntro = ({ Donate }) => {
+const HeroIntro = () => {
     const AmountRef = useRef("")
 
     const onSubmitHandlerDeposit = async (e) => {
-        e.preventDefault()
+        e.preventDefault();
         if (typeof window.ethereum !== 'undefined') {
-
-            // The ERC-20 Contract ABI, which is a common contract interface
-            // for tokens (this is the Human-Readable ABI format)
-            const ABI = [
-                {
-                    "inputs": [
-                        {
-                            "internalType": "string",
-                            "name": "_greeting",
-                            "type": "string"
-                        }
-                    ],
-                    "stateMutability": "nonpayable",
-                    "type": "constructor"
-                },
-                {
-                    "inputs": [],
-                    "name": "deposit",
-                    "outputs": [],
-                    "stateMutability": "payable",
-                    "type": "function"
-                },
-                {
-                    "inputs": [],
-                    "name": "greet",
-                    "outputs": [
-                        {
-                            "internalType": "string",
-                            "name": "",
-                            "type": "string"
-                        }
-                    ],
-                    "stateMutability": "view",
-                    "type": "function"
-                },
-                {
-                    "inputs": [
-                        {
-                            "internalType": "string",
-                            "name": "_greeting",
-                            "type": "string"
-                        }
-                    ],
-                    "name": "setGreeting",
-                    "outputs": [],
-                    "stateMutability": "nonpayable",
-                    "type": "function"
-                }
-            ];
-
-            const contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3"
             const provider = new ethers.providers.Web3Provider(window.ethereum)
             const signer = provider.getSigner()
 
-            // The Contract object
-            const Contract = new ethers.Contract(contractAddress, ABI, signer);
-
-            const donateAmout = AmountRef.current.value
-            console.log(donateAmout);
+            const DonateAmount = AmountRef.current.value
             const tx = signer.sendTransaction({
                 to: "0x8626f6940E2eb28930eFb4CeF49B2d1F2C9C1199",
-                value: ethers.utils.parseEther(donateAmout)
+                value: ethers.utils.parseEther(DonateAmount)
             });
             console.log(tx);
         }
@@ -116,8 +59,8 @@ const HeroIntro = ({ Donate }) => {
 
                                 <br />
                                 <FlexBoxToRow>
-                                    <Button Donate={Donate} full="100%" bg="#45DBB7" tittle="Donate" urlData="" />
-                                    <Button Donate="" full="100%" bgHover="#45DBB7" tittle="Contact us" urlData="mailto:bholuwatife00@gmail.com" />
+                                    <Button full="100%" bg="#45DBB7" tittle="Explore" urlData="/blogs" />
+                                    <Button  full="100%" bgHover="#45DBB7" tittle="Contact us" urlData="mailto:bholuwatife00@gmail.com" />
                                 </FlexBoxToRow>
                                 <br />
                             </Divider>

@@ -41,7 +41,6 @@ const Navigation = ({ Donate }) => {
         const isScrolledHandler = () => {
             if (window.scrollY >= 100) {
                 setIsScroll(true)
-
             }
             else {
                 setIsScroll(false)
@@ -84,8 +83,11 @@ const Navigation = ({ Donate }) => {
                         <Constraints >
                             <NavigationWrapper>
                                 <div className="Logo">
-                                    <h1>!{Logo}</h1>
-                                    {/* <Image src={Logo} alt="Logo" /> */}
+                                    <Link href="/">
+                                        <a style={{ color: "inherit" }}>
+                                            <h1>!{Logo}</h1>
+                                        </a>
+                                    </Link>
                                 </div>
 
                                 <NavigationShadow clicked={isclicked} onClick={isClickedHandler} >
@@ -103,7 +105,7 @@ const Navigation = ({ Donate }) => {
                                             bg="#45DBB7"
                                             Donate={Donate}
                                             full="100%"
-                                            tittle="Donate"
+                                            tittle="Connect Wallet"
                                         />
                                     </NavigationItem>
                                 </NavigationShadow>
